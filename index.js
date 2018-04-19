@@ -18,12 +18,12 @@ app.get('/', function(req, res) {
     res.send("Hi I am a chatbot")
   })
 
-   let token = "EAAC8EU4M1HkBAI0Q2k3HTa4rbrNwu03jZARCp8k4BOFk36ZAjEMjavXKzeYBjjBWlIqyLCsNhbHWDn8zoApwSohrk3KAOM2KClhYD7XyZBlsZB3Hz7YcE2NIsCbbBn7cKZBjpsf2JFtGhoiTqB9mYAneLwsZCaPJd5kacY45CGAgZDZD"
+   let token = "*************************"
 
   // Facebook
 
   app.get('/webhook/',function(req, res) {
-    if(req.query['hub.verify_token'] === "oqHhAsdX!&9!y9$") {
+    if(req.query['hub.verify_token'] === "***************") {
        res.send(req.query['hub.challenge'])
     }
     res.send("Wrong token")
